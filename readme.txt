@@ -15,3 +15,4 @@ For logging in to the application follow below instructions:
 2. Fill up the register form
 3. Click on the login button and login to application using the email and password of user you have registered
 4. Once you logged in you can access Add Task and List Task pages from left hand side menu bar
+5. On Task List for filtering, select the appropriate filter values and clickon filter button.
