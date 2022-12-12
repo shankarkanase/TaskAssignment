@@ -9,7 +9,7 @@ Installation Instructions:
 4. In inc.config.php file replace your server url for SITE_URL constant.
 5. Open inc/api_config.php file and replace host name constant with your host name, other details keep same
 
-For logging in to the applicatio follow below instructions:
+For logging in to the application follow below instructions:
 
 1. Click on Register button
 2. Fill up the register form
