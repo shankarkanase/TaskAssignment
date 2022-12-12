@@ -15,6 +15,8 @@ $user = new Users();
 $conn = $user->connect(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_DRIVER);
 $user->dbh($conn);
 
+//echo "<pre>";
+//print_r($_POST);
 
 
 $validToken = $user->validateToken($_POST['token']);

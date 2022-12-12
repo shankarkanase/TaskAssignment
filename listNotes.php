@@ -25,7 +25,7 @@ include('inc/menu.inc.php');
                                     <tr>
                                         <th>Subject</th>
                                         <th>Note</th>
-                                        <th>Attachment</th>
+                                        <th>Attachments</th>
 
                                     </tr>
                                 </thead>

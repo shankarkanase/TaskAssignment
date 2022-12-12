@@ -95,7 +95,6 @@ $(document).ready(function () {
 
         $("#addtask").html("Processing...");
 
-
         var form_data = new FormData($('#addTaskForm')[0]);
 
         $.ajax({
@@ -145,7 +144,7 @@ $(document).ready(function () {
     $("#addNote").click(function () {
 
         var count = $(".noteDiv section").length;
-        $(".noteDiv section:last").append('<section><h4> Note ' + (count + 1) + '</h4 ><div class="form-group"><label for="firstName">Subject<span class="mandatory">*</span></label><textarea class="form-control" id="subject" name="note_subject[]" placeholder="Enter Subject"></textarea><div id="subjectError" class="mandatory"></div></div><div class="form-group"><label for="firstName">Attachment<span class="mandatory">*</span></label><input type="file" class="form-control" id="attachment" name="attachment[][]" multiple><div id="descriptionError" class="mandatory"></div></div><div class="form-group"><label for="firstName">Note<span class="mandatory">*</span></label><textarea class="form-control" id="note" name="note[]" placeholder="Enter Note"></textarea><div id="descriptionError" class="mandatory"></div></div></section>');
+        $(".noteDiv section:last").append('<section><h4> Note ' + (count + 1) + '</h4 ><div class="form-group"><label for="firstName">Subject<span class="mandatory">*</span></label><textarea class="form-control" id="subject" name="note_subject[]" placeholder="Enter Subject"></textarea><div id="subjectError" class="mandatory"></div></div><div class="form-group"><label for="firstName">Attachment<span class="mandatory">*</span></label><input type="file" class="form-control" id="attachment" name="attachment_' + count + '[]" multiple><div id="descriptionError" class="mandatory"></div></div><div class="form-group"><label for="firstName">Note<span class="mandatory">*</span></label><textarea class="form-control" id="note" name="note[]" placeholder="Enter Note"></textarea><div id="descriptionError" class="mandatory"></div></div></section>');
 
     });
 

@@ -1,0 +1,43 @@
+CREATE TABLE `tb_attachment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `note_id` int(11) NOT NULL,
+  `attachment` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_notes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `task_id` int(11) NOT NULL,
+  `subject` varchar(500) NOT NULL,
+  `note` varchar(500) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_tasks` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `subject` varchar(500) NOT NULL,
+  `description` varchar(500) NOT NULL,
+  `start_date` date NOT NULL,
+  `due_date` date NOT NULL,
+  `status` enum('New','Incomplete','Complete') NOT NULL,
+  `priority` enum('High','Medium','Low') NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_token` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `token` varchar(500) DEFAULT NULL,
+  `expire` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `tb_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `phone` varchar(11) NOT NULL,
+  `password` varchar(1000) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;

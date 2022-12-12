@@ -31,7 +31,7 @@ $(document).ready(function () {
 
                     var attach_files = '';
                     attachments.forEach(attachment => {
-                        attach_files = attach_files + "<i class='fa fa-file'></i>&nbsp;<a href='attachments/" + attachment.attachment + "'>" + attachment.attachment + "</a><br>";
+                        attach_files = attach_files + "<i class='fa fa-file'></i>&nbsp;<a href='attachments/" + attachment.attachment + "' target='_blank'>" + attachment.attachment + "</a><br>";
                     });
                     $("#table tbody").append("<tr><td>" + task.subject + "</td><td>" + task.note + "</td><td>" + attach_files + "</td></tr>");
                 });

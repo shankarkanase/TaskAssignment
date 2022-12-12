@@ -78,7 +78,7 @@ include('inc/menu.inc.php');
 
 									<div class="form-group">
 										<label for="firstName">Attachment<span class="mandatory">*</span></label>
-										<input type="file" class="form-control" id="attachment" name="attachment[][]" multiple>
+										<input type="file" class="form-control" id="attachment" name="attachment_0[]" multiple>
 										<div id="descriptionError" class="mandatory"></div>
 									</div>
 
