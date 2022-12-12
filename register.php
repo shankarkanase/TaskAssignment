@@ -3,8 +3,6 @@ $pageTitle = "Login";
 include('inc/preLogin.header.inc.php');
 ?>
 
-
-
 <body class="login-body">
     <div class="container">
         <form class="form-signin" method="post">
